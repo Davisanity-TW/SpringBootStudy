@@ -1,0 +1,44 @@
+site_name: Davisanity Notes
+site_description: Spring Boot / React 等學習筆記（可擴展）
+repo_url: https://github.com/Davisanity-TW/SpringBootStudy
+repo_name: Davisanity-TW/SpringBootStudy
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: zh-TW
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+
+plugins:
+  - search
+  - awesome-pages
+  - git-revision-date-localized:
+      enable_creation_date: true
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.highlight
+
+nav:
+  - Home: index.md
+  - Spring Boot:
+      - spring-boot/index.md
+      - 01 Hello World: spring-boot/01-hello-world.md
+      - 02 DI & Service: spring-boot/02-di.md
+  - React (placeholder):
+      - react/index.md
