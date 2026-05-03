@@ -26,6 +26,7 @@ plugins:
   - awesome-pages
   - git-revision-date-localized:
       enable_creation_date: true
+      locale: zh_TW
 
 markdown_extensions:
   - admonition
